@@ -37,6 +37,7 @@ public class MainActivity extends ActionBarActivity {
         LayerDrawable layerDrawable = new LayerDrawable(layers);
         imageView2.setImageDrawable(layerDrawable);
 
+        //insert newPhoto into device
         MediaStore.Images.Media.insertImage(getContentResolver(),newPhoto,"iverson","inverted");
 
     }
